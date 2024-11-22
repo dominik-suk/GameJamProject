@@ -7,9 +7,10 @@ using UnityEngine.InputSystem;
 public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
 {
     [Header("Events")]
-    [SerializeField] public UnityEvent<Vector2> MoveEvent;
-    [SerializeField] public UnityEvent JumpEvent;
-    [SerializeField] public UnityEvent InteractEvent;
+    [SerializeField] private UnityEvent<Vector2> MoveEvent;
+    [SerializeField] private UnityEvent JumpEvent;
+    [SerializeField] private UnityEvent InteractEvent;
+    [SerializeField] private UnityEvent SwitchLayerEvent;
     private Controls controls;
     private void OnEnable() {
         controls = new Controls();
@@ -37,6 +38,11 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
     public void OnInteract(InputAction.CallbackContext context)
     {
         InteractEvent?.Invoke();
+    }
+
+    public void OnSwitchLayer(InputAction.CallbackContext context)
+    {
+        SwitchLayerEvent?.Invoke();
     }
 }
 

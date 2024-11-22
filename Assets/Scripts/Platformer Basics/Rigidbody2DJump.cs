@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Rigidbody2DJump : MonoBehaviour {
     [Header("References")]
-    [SerializeField] PlatformerInputReader inputReader;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] GroundedChecker2D groundedChecker;
 
@@ -17,12 +16,10 @@ public class Rigidbody2DJump : MonoBehaviour {
     int jumpCount = 0;
     public Action OnJump;
     private void OnEnable() {
-        inputReader.JumpEvent += HandleJump;
         groundedChecker.OnGrounded += ResetJump;
         groundedChecker.OnLeaveGround += StartCoyoteTimer;
     }
     private void OnDisable() {
-        inputReader.JumpEvent -= HandleJump;
         groundedChecker.OnGrounded -= ResetJump;
         groundedChecker.OnLeaveGround -= StartCoyoteTimer;
         StopAllCoroutines();
@@ -38,7 +35,7 @@ public class Rigidbody2DJump : MonoBehaviour {
             StartCoroutine(CoyoteTimerRoutine());
         }
     }
-    private void HandleJump()
+    public void HandleJump()
     {
         StartCoroutine(TryJump());
     }

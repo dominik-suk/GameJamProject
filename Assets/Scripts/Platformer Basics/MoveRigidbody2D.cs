@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveRigidbody2D : MonoBehaviour {
     [Header("References")]
-    [SerializeField] PlatformerInputReader inputReader;
     [SerializeField] Rigidbody2D rb;
 
     [Header("Settings")]
@@ -12,13 +11,7 @@ public class MoveRigidbody2D : MonoBehaviour {
     [SerializeField] float speedUpTime;
     [SerializeField] float moveSpeed = 10;
     Vector2 desiredDirection;
-    private void OnEnable() {
-        inputReader.MoveEvent += HandleMovement;
-    }
-    private void OnDisable() {
-        inputReader.MoveEvent -= HandleMovement;
-    }
-        private void HandleMovement(Vector2 vector)
+    public void HandleMovement(Vector2 vector)
     {
         desiredDirection = vector;
     }

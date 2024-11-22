@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 [CreateAssetMenu(fileName = "PlatformerInputReader", menuName = "PlatformerInputReader", order = 0)]
-public class PlatformerInputReader : ScriptableObject, Controls.IPlatformerActions
+public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
 {
-    public Action<Vector2> MoveEvent;
-    public Action JumpEvent;
+    public UnityEvent<Vector2> MoveEvent;
+    public UnityEvent JumpEvent;
     private Controls controls;
     private void OnEnable() {
         controls = new Controls();

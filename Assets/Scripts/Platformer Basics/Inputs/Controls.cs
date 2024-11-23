@@ -62,6 +62,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""1c238387-cfa7-44ad-a531-988ab0edde16"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -185,6 +194,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""SwitchLayer"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8782eb3e-9a85-4180-9687-bb150e6b4f8a"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d6d6a715-6978-4d30-b5da-7489d5b9402b"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -220,6 +251,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Platformer_Move = m_Platformer.FindAction("Move", throwIfNotFound: true);
         m_Platformer_Interact = m_Platformer.FindAction("Interact", throwIfNotFound: true);
         m_Platformer_SwitchLayer = m_Platformer.FindAction("SwitchLayer", throwIfNotFound: true);
+        m_Platformer_Dash = m_Platformer.FindAction("Dash", throwIfNotFound: true);
     }
 
     ~@Controls()
@@ -290,6 +322,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Platformer_Move;
     private readonly InputAction m_Platformer_Interact;
     private readonly InputAction m_Platformer_SwitchLayer;
+    private readonly InputAction m_Platformer_Dash;
     public struct PlatformerActions
     {
         private @Controls m_Wrapper;
@@ -298,6 +331,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Platformer_Move;
         public InputAction @Interact => m_Wrapper.m_Platformer_Interact;
         public InputAction @SwitchLayer => m_Wrapper.m_Platformer_SwitchLayer;
+        public InputAction @Dash => m_Wrapper.m_Platformer_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Platformer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -319,6 +353,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SwitchLayer.started += instance.OnSwitchLayer;
             @SwitchLayer.performed += instance.OnSwitchLayer;
             @SwitchLayer.canceled += instance.OnSwitchLayer;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
         }
 
         private void UnregisterCallbacks(IPlatformerActions instance)
@@ -335,6 +372,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SwitchLayer.started -= instance.OnSwitchLayer;
             @SwitchLayer.performed -= instance.OnSwitchLayer;
             @SwitchLayer.canceled -= instance.OnSwitchLayer;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
         }
 
         public void RemoveCallbacks(IPlatformerActions instance)
@@ -376,5 +416,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnSwitchLayer(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }

@@ -55,15 +55,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""SwitchLayer"",
-                    ""type"": ""Button"",
-                    ""id"": ""26f0d153-5117-4526-b25c-b739b9232e6e"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Dash"",
                     ""type"": ""Button"",
                     ""id"": ""1c238387-cfa7-44ad-a531-988ab0edde16"",
@@ -186,17 +177,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6977cf1d-4350-4b19-b78b-cdfc0fa19076"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchLayer"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""8782eb3e-9a85-4180-9687-bb150e6b4f8a"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
@@ -214,6 +194,54 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Inventory"",
+            ""id"": ""bc86f504-3eea-460a-9141-2302ffd1bd7d"",
+            ""actions"": [
+                {
+                    ""name"": ""ChangeItem"",
+                    ""type"": ""Value"",
+                    ""id"": ""e8151048-0cdc-48d9-9b8c-b2e0a04d1fbe"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""UseItem"",
+                    ""type"": ""Button"",
+                    ""id"": ""f61c67bc-af6e-4053-9208-cb7543c84a6d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""31105604-2068-4728-8f1c-f61704132e44"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b57b7e3e-b56c-4a91-afd4-66a20d1c38ce"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseItem"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -250,13 +278,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Platformer_Jump = m_Platformer.FindAction("Jump", throwIfNotFound: true);
         m_Platformer_Move = m_Platformer.FindAction("Move", throwIfNotFound: true);
         m_Platformer_Interact = m_Platformer.FindAction("Interact", throwIfNotFound: true);
-        m_Platformer_SwitchLayer = m_Platformer.FindAction("SwitchLayer", throwIfNotFound: true);
         m_Platformer_Dash = m_Platformer.FindAction("Dash", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_ChangeItem = m_Inventory.FindAction("ChangeItem", throwIfNotFound: true);
+        m_Inventory_UseItem = m_Inventory.FindAction("UseItem", throwIfNotFound: true);
     }
 
     ~@Controls()
     {
         UnityEngine.Debug.Assert(!m_Platformer.enabled, "This will cause a leak and performance issues, Controls.Platformer.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Inventory.enabled, "This will cause a leak and performance issues, Controls.Inventory.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -321,7 +353,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Platformer_Jump;
     private readonly InputAction m_Platformer_Move;
     private readonly InputAction m_Platformer_Interact;
-    private readonly InputAction m_Platformer_SwitchLayer;
     private readonly InputAction m_Platformer_Dash;
     public struct PlatformerActions
     {
@@ -330,7 +361,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Platformer_Jump;
         public InputAction @Move => m_Wrapper.m_Platformer_Move;
         public InputAction @Interact => m_Wrapper.m_Platformer_Interact;
-        public InputAction @SwitchLayer => m_Wrapper.m_Platformer_SwitchLayer;
         public InputAction @Dash => m_Wrapper.m_Platformer_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Platformer; }
         public void Enable() { Get().Enable(); }
@@ -350,9 +380,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
-            @SwitchLayer.started += instance.OnSwitchLayer;
-            @SwitchLayer.performed += instance.OnSwitchLayer;
-            @SwitchLayer.canceled += instance.OnSwitchLayer;
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
@@ -369,9 +396,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
-            @SwitchLayer.started -= instance.OnSwitchLayer;
-            @SwitchLayer.performed -= instance.OnSwitchLayer;
-            @SwitchLayer.canceled -= instance.OnSwitchLayer;
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
@@ -392,6 +416,60 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     }
     public PlatformerActions @Platformer => new PlatformerActions(this);
+
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private List<IInventoryActions> m_InventoryActionsCallbackInterfaces = new List<IInventoryActions>();
+    private readonly InputAction m_Inventory_ChangeItem;
+    private readonly InputAction m_Inventory_UseItem;
+    public struct InventoryActions
+    {
+        private @Controls m_Wrapper;
+        public InventoryActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ChangeItem => m_Wrapper.m_Inventory_ChangeItem;
+        public InputAction @UseItem => m_Wrapper.m_Inventory_UseItem;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void AddCallbacks(IInventoryActions instance)
+        {
+            if (instance == null || m_Wrapper.m_InventoryActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Add(instance);
+            @ChangeItem.started += instance.OnChangeItem;
+            @ChangeItem.performed += instance.OnChangeItem;
+            @ChangeItem.canceled += instance.OnChangeItem;
+            @UseItem.started += instance.OnUseItem;
+            @UseItem.performed += instance.OnUseItem;
+            @UseItem.canceled += instance.OnUseItem;
+        }
+
+        private void UnregisterCallbacks(IInventoryActions instance)
+        {
+            @ChangeItem.started -= instance.OnChangeItem;
+            @ChangeItem.performed -= instance.OnChangeItem;
+            @ChangeItem.canceled -= instance.OnChangeItem;
+            @UseItem.started -= instance.OnUseItem;
+            @UseItem.performed -= instance.OnUseItem;
+            @UseItem.canceled -= instance.OnUseItem;
+        }
+
+        public void RemoveCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            foreach (var item in m_Wrapper.m_InventoryActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -415,7 +493,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
-        void OnSwitchLayer(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnChangeItem(InputAction.CallbackContext context);
+        void OnUseItem(InputAction.CallbackContext context);
     }
 }

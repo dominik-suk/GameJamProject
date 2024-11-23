@@ -33,15 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SwitchLayer",
-                    "type": "Button",
-                    "id": "26f0d153-5117-4526-b25c-b739b9232e6e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Dash",
                     "type": "Button",
                     "id": "1c238387-cfa7-44ad-a531-988ab0edde16",
@@ -164,17 +155,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6977cf1d-4350-4b19-b78b-cdfc0fa19076",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SwitchLayer",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8782eb3e-9a85-4180-9687-bb150e6b4f8a",
                     "path": "<Keyboard>/shift",
                     "interactions": "",
@@ -192,6 +172,54 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Inventory",
+            "id": "bc86f504-3eea-460a-9141-2302ffd1bd7d",
+            "actions": [
+                {
+                    "name": "ChangeItem",
+                    "type": "Value",
+                    "id": "e8151048-0cdc-48d9-9b8c-b2e0a04d1fbe",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UseItem",
+                    "type": "Button",
+                    "id": "f61c67bc-af6e-4053-9208-cb7543c84a6d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "31105604-2068-4728-8f1c-f61704132e44",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b57b7e3e-b56c-4a91-afd4-66a20d1c38ce",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseItem",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -21,4 +21,8 @@ MonoBehaviour:
       dir?"
     Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
     SpecialSprite: {fileID: 0}
-  <DialogueOptions>k__BackingField: []
+  <DialogueOptions>k__BackingField:
+  - optionText: Error Exeption Bla
+    nextDialogueBranch: {fileID: 0}
+  - optionText: Fisch Fisch Fisch
+    nextDialogueBranch: {fileID: 11400000}

@@ -11,7 +11,6 @@ public class DialogueInteraction : MonoBehaviour, IInteractable {
 
     public void Interact()
     {
-        Debug.Log("Dialogue Event");
         OnDialogueInteraction?.Invoke(dialogue);
         interactEvent?.Invoke();
     }

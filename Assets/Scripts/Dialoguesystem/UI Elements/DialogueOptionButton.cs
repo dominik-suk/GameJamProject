@@ -26,6 +26,7 @@ public class DialogueOptionButton : MonoBehaviour {
     }
     private void OnDisable() {
         OnSelected -= DestroSelf;
+        Destroy(gameObject);
     }
 
     private void DestroSelf()

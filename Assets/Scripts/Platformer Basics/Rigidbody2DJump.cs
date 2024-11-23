@@ -15,6 +15,10 @@ public class Rigidbody2DJump : MonoBehaviour {
     [SerializeField] float inputBuffer = .1f;
     int jumpCount = 0;
     public Action OnJump;
+
+
+    Vector2 BounceVelocity;
+    float bounceDecreaseFactor;
     private void OnEnable() {
         groundedChecker.OnGrounded += ResetJump;
         groundedChecker.OnLeaveGround += StartCoyoteTimer;
@@ -41,7 +45,7 @@ public class Rigidbody2DJump : MonoBehaviour {
     }
     public void HandleCancelJump()
     {
-        //StartCoroutine(TryCancelJump());
+        StartCoroutine(TryCancelJump());
     }
     private IEnumerator TryJump()
     {
@@ -72,6 +76,12 @@ public class Rigidbody2DJump : MonoBehaviour {
             yield return null;
         }
     }
+
+    public void Bounce(Vector2 up, float force, float decreaser = 0.5f)
+    {
+        BounceVelocity = up * force;
+        bounceDecreaseFactor = decreaser;
+    }
     private IEnumerator CoyoteTimerRoutine()
     {
         float timer = coyoteTime;
@@ -87,6 +97,7 @@ public class Rigidbody2DJump : MonoBehaviour {
         Vector2 newVelocity = rb.linearVelocity;
         newVelocity.y = jumpStrengt[jumpCount];
         rb.linearVelocity = newVelocity;
+        BounceVelocity = Vector2.Lerp(BounceVelocity, Vector2.zero, bounceDecreaseFactor);
         jumpCount++;
         StopAllCoroutines();
         OnJump?.Invoke();

@@ -39,17 +39,36 @@ public class Rigidbody2DJump : MonoBehaviour {
     {
         StartCoroutine(TryJump());
     }
+    public void HandleCancelJump()
+    {
+        //StartCoroutine(TryCancelJump());
+    }
     private IEnumerator TryJump()
     {
         float timer = 0;
         while(timer < inputBuffer)
         {
-            if(groundedChecker.IsGrounded ||  jumpCount < jumpStrengt.Length)
+            if(groundedChecker.IsGrounded)
+            {
+                jumpCount = 0;
+                Jump();
+                yield break;
+            }
+            if (jumpCount < jumpStrengt.Length)
             {
                 Jump();
                 yield break;
             }
             timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    private IEnumerator TryCancelJump()
+    {
+        while(rb.linearVelocityY > 0)
+        {
+            rb.linearVelocityY *= 0.5f;
             yield return null;
         }
     }

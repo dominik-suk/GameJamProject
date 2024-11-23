@@ -9,6 +9,7 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
     [Header("Events")]
     [SerializeField] private UnityEvent<Vector2> MoveEvent;
     [SerializeField] private UnityEvent JumpEvent;
+    [SerializeField] private UnityEvent JumpCancelEvent;
     [SerializeField] private UnityEvent InteractEvent;
     [SerializeField] private UnityEvent SwitchLayerEvent;
     private Controls controls;
@@ -27,6 +28,10 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
         if(context.performed)
         {
             JumpEvent?.Invoke();
+        }
+        if (context.canceled)
+        {
+            JumpCancelEvent?.Invoke();
         }
     }
 

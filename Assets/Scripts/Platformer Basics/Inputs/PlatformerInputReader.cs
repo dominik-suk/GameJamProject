@@ -40,7 +40,6 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
     {
         if (context.started)
         {
-
             DashEvent?.Invoke();
         }
     }

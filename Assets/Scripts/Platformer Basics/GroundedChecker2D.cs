@@ -4,6 +4,7 @@ using UnityEngine;
 public class GroundedChecker2D : MonoBehaviour {
     [SerializeField] private Collider2D groundedCollider;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private MoveRigidbody2D moveRigidbody;
     public Action<GameObject> OnGrounded;
     public Action<GameObject> OnLeaveGround;
     public bool IsGrounded {get;private set;}
@@ -16,5 +17,6 @@ public class GroundedChecker2D : MonoBehaviour {
         if(groundedCollider.IsTouchingLayers(layerMask)) return;
         IsGrounded = false;
         OnLeaveGround?.Invoke(gameObject);
+        moveRigidbody.GainDash();
     }    
 }

@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryDisplay : MonoBehaviour {
-    [SerializeField] private Image previousItem, currentItem, nextItem;
+    [SerializeField] private GameObject header;
+    [SerializeField] private Image currentItem;
     private void OnEnable() {
         Inventory.OnUpdatedInventory += UpdateDisplay;
         Inventory.OnChangedSelectedItem += UpdateDisplay;
@@ -16,10 +17,17 @@ public class InventoryDisplay : MonoBehaviour {
     {
         UpdateDisplay();
     }
-    
+
     public void UpdateDisplay()
     {
-        if(Inventory.Instance.NumberOfItems == 0) return;
+        if(Inventory.Instance.NumberOfItems == 0) 
+        {
+            header.SetActive(false);
+            currentItem.gameObject.SetActive(false);
+            return;
+        }
+        header.SetActive(true);
+        currentItem.gameObject.SetActive(true);
         currentItem.sprite = Inventory.Instance.CurrentItem.Icon;
     }
 }

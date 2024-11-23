@@ -49,6 +49,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  moveRigidbody: {fileID: 0}
 --- !u!61 &2035449028900372303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -426,8 +427,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 3572730985387613622}
   horizontalMovement: 0
-  speedUpTime: 0.05
+  speedUpTime: 0.1
   moveSpeed: 10
+  dashForce: 13
+  dashForceDecreaseSpeed: 0.5
+  dashCount: 1
 --- !u!114 &5427842483010666827
 MonoBehaviour:
   m_ObjectHideFlags: 0

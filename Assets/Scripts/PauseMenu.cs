@@ -18,4 +18,7 @@ public class PauseMenu : MonoBehaviour
     public void ShowControlsPanel(){
         controlsPanel.SetActive(true);
     }
+    public void ResetScene(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

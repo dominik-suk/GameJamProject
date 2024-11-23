@@ -9,7 +9,6 @@ public class DialogueDisplay: MonoBehaviour {
     [Header("References")]
     [SerializeField] private DialogueReader dialogueReader;
     [SerializeField] private Typewriter typewriter;
-    [SerializeField] private Animator animator;
     [SerializeField] private DialogueOptionButton dialogueOptionPrefab;
 
 
@@ -29,8 +28,11 @@ public class DialogueDisplay: MonoBehaviour {
     [Header("Events")]
     [SerializeField] private UnityEvent onNextLine;
     [SerializeField] private UnityEvent onFinishedDialogue;
+    public static Action OnDialogueStarted;
+    public static Action OnDialogueFinished;
     public Action OnNextLine;
     private void OnEnable() {
+        OnDialogueStarted?.Invoke();
         NextLine();
     }
     private void SetDialogueUI(Dialogue.Line dialogueLine)
@@ -40,8 +42,6 @@ public class DialogueDisplay: MonoBehaviour {
             Close();
             return;
         }
-        Debug.Log(dialogueLine.Speaker.Name);
-        Debug.Log(dialogueLine.Text);
         nameLocalized.text = dialogueLine.Speaker.Name;
         dialogueLocalized.TypeMessage(dialogueLine.Text); 
         backgroundImage.color = dialogueLine.Speaker.BackgroundColor;
@@ -49,7 +49,6 @@ public class DialogueDisplay: MonoBehaviour {
         nameText.color = dialogueLine.Speaker.BackgroundColor;
         dialogueText.color = dialogueLine.Speaker.TextColor;
         speakerImage.sprite = dialogueLine.Speaker.Sprite;
-        animator.SetTrigger("Next");
 
         if(dialogueReader.IsLastline())
         {
@@ -80,10 +79,17 @@ public class DialogueDisplay: MonoBehaviour {
     }
         private void Close()
     {
-        onFinishedDialogue?.Invoke();
+        
         if(!dialogueReader.HasOptions())
         {
-            animator.SetTrigger("Close");
+            onFinishedDialogue?.Invoke();
         }
+    }
+    public void Deactivate()
+    {
+        gameObject.SetActive(false);
+    }
+    private void OnDisable() {
+        OnDialogueFinished?.Invoke();
     }
 }

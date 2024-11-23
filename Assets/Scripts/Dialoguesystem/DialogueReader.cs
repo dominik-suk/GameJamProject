@@ -6,7 +6,7 @@ public class DialogueReader : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private Dialogue currentDialogue;
     [Header("Events")]
-    [SerializeField] private UnityEvent onNewDialogueSet;
+    [SerializeField] private UnityEvent NewDialogueSetEvent;
     private int dialogueIndex;
     private void OnEnable() {
         DialogueInteraction.OnDialogueInteraction += SetDialogue;
@@ -16,9 +16,10 @@ public class DialogueReader : MonoBehaviour
     }
     public void SetDialogue(Dialogue dialogue)
     {
+        Debug.Log("Set Dialogue");
         currentDialogue = dialogue;
         dialogueIndex = 0;
-        onNewDialogueSet?.Invoke();
+        NewDialogueSetEvent?.Invoke();
     }
     public Dialogue.Line ReadDialogueLine()
     {

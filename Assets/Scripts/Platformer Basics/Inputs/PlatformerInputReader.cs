@@ -52,7 +52,11 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        InteractEvent?.Invoke();
+        if(context.started)
+        {
+            Debug.Log("Interact");
+            InteractEvent?.Invoke();
+        }
     }
 
     public void OnSwitchLayer(InputAction.CallbackContext context)

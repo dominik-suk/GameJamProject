@@ -13,6 +13,7 @@ public class PlayerInteract : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.TryGetComponent(out IInteractable interactable))
         {
+            if(interactables.Contains(interactable)) return;
             if(interactables.Count == 0)
             {
                 OnInteractionsAvailable?.Invoke();

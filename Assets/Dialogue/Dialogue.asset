@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   <DialogueLines>k__BackingField:
-  - Text: Was geht?
+  - Text: Was geht? Was geht? Was geht? Was geht? Was geht? Was geht? Was geht? Was
+      geht? Was geht? Was geht?
     Speaker: {fileID: 11400000, guid: 7bc73b3e395749d4cbe6f73048de0c99, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: "Nicht viel... \n\xC4hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh...\nBei

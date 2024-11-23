@@ -26,3 +26,5 @@ MonoBehaviour:
     nextDialogueBranch: {fileID: 0}
   - optionText: Fisch Fisch Fisch
     nextDialogueBranch: {fileID: 11400000}
+  - optionText: Blubb Blubb Blubb
+    nextDialogueBranch: {fileID: 0}

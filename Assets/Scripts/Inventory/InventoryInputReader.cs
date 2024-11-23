@@ -18,8 +18,15 @@ public class InventoryInputReader : MonoBehaviour, Controls.IInventoryActions
         controls.Inventory.Disable();
     }
 
-    public void OnScroll(InputAction.CallbackContext context)
+    public void OnChangeItem(InputAction.CallbackContext context)
     {
-        ScrollEvent?.Invoke(context.ReadValue<Vector2>());
+        Debug.Log("Change Item");
+        Inventory.Instance.ChangeSelectedItem(1);
+    }
+
+    public void OnUseItem(InputAction.CallbackContext context)
+    {
+        Debug.Log("Use Item");
+        Inventory.Instance.CurrentItem.Use();
     }
 }

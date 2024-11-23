@@ -183,9 +183,9 @@
             "actions": [
                 {
                     "name": "ChangeItem",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "e8151048-0cdc-48d9-9b8c-b2e0a04d1fbe",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -203,23 +203,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "31105604-2068-4728-8f1c-f61704132e44",
-                    "path": "<Mouse>/scroll",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ChangeItem",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "b57b7e3e-b56c-4a91-afd4-66a20d1c38ce",
                     "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "UseItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d13f96a-d0d2-4ed7-8cb0-58fb7acc2d0a",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeItem",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

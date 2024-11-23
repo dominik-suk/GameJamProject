@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
+  m_Name: 2-Spaceship
+  m_EditorClassIdentifier: 
+  <DialogueLines>k__BackingField:
+  - Text: "Ok... ich glaube ich bin verr\xFCckt geworden... Sind wir auf einem Raumschiff?"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Willkommen auf der \"Aetherium\"! Es ist nicht gro\xDF, aber es ist unser
+      Zuhause."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Danke. Aber wie bin ich hier? Gerade war ich noch auf der Erde in dem Smog...
+      und jetzt bin ich hier...
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Du hast bestimmt etwas unerwartet gefunden dort unten oder...? Etwas was
+      auf der Erde nicht sein sollte...?
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Die Maschine! Sie\u2026 sie hat sich einfach selbst aktiviert. Und jetzt
+      bin ich hier. Wie merkw\xFCrdig. Woher wei\xDFt du davon?"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Nun, die einzige M\xF6glichkeit zwischen den Zeiten zu reisen ist mit
+      einer Zeitmaschine. Die gibt es eigentlich nicht auf der Erde. Aber du musst
+      eine gefunden haben, sonst w\xE4rst du nicht hier. Ganz klar."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Ich habe einen Kalender gesehen, dass wir uns im Jahr 2300 befinden. Was
+      ist in den letzten 50 Jahren passiert?
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Oh... ich sch\xE4tze du verdienst es zu h\xF6ren... aber es ist keine
+      leichte Geschichte..."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Erz\xE4hl mir was mit der Erde passiert ist."
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Die sch\xF6ne, blaue Erde... heute ist sie grau. Du kannst sie aus dem
+      Fenster sehen. Jahrzehnte der Verschmutzung, Gier und Vernachl\xE4ssigung haben
+      sie irgendwann umgebracht. Du hast es in deiner Zeit gesehen - die Luft war
+      dunkel und das Wasser in den Fl\xFCssen giftig wegen den Treibhausgasen und
+      dem Planktonsterben... doch das war erst der Anfang.. globale Hungersn\xF6te
+      f\xFChrten zu Krieg... die Ozeane sind verdampft und giftige Gase traten aus
+      der trockenen Erde... die Atmosph\xE4re wurde unbewohnbar."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Aber.. irgendjemand hat etwas gemacht, oder? Die Menschen w\xFCrden ihren
+      Planeten nicht einfach untergehen lassen!"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Oh, sie haben es versucht... aber es war zu wenig und zu sp\xE4t. Heute
+      gibt es nur noch Menschen im Weltall.\n"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Erz\xE4hl mir etwas \xFCber dieses Schiff."
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Wenige Jahre bevor alles anfing zu kollabieren haben sich unabh\xE4ngige
+      Wissenschaftler und Investoren zusammengetan, um die \"Aetherium\" zu entwerfen
+      und bauen. Sie hatten begriffen dass jegliche Interventionen der Regierungen
+      zu sp\xE4t kommen w\xFCrden. Sie wollten Ihre Zukunft auf eigene Weise retten.
+      Als der Sauerstoff-Anteil in der Atmosph\xE4re unter das absolute Minimum fiel
+      und die S\xE4ure-Regen einsetzen, verliessen sie den Planeten mit ihrem Schiff."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Sie verliessen den Planeten? Alleine? Was ist mit den anderen?
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Ja, sie gingen alleine\u2026 alle anderen sind gestorben... Billiarden.
+      Wir haben mitgenommen, was wir brauchten, aber auch wir f\xFChlen uns hier
+      manchmal mehr tot als lebendig\u2026 Unsere Ressourcen sind begrenzt. Wir sind
+      wenige. Jetzt streifen wir um die Umlaufbahn, ohne Ziel oder Zukunft..."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Puuuh... Das ist aber ein Brocken... ich wei\xDF nicht ob ich lieber hier
+      bei euch w\xE4re oder da unten gestorben... und ich verstehe immer noch nicht,
+      warum ich jetzt hier bin. Ich bin niemand. Was soll ich hier...\n"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Vielleicht bist du nicht so unwichtig wie du denkst. Das Universum hat
+      merkw\xFCrdige Arten, seine F\xE4den zu ziehen. Vielleicht war es dir immer
+      bestimmt, diese Zukunft zu sehen...\"\n"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: 'Du sprichst als ob du mich kennst. Und du erinnerst mich auch an jemanden
+      von der Erde...
+
+'
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Ich kenne dich nicht. Aber ich erkenne in deinen Augen mich selbst, als
+      ich zum ersten Mal diese Schiff betrat, wissend, alles verloren zu haben...
+      Aber konzentriere dich auf das Jetzt. Du bist hier. Und mithilfe der Zeitmaschine
+      und den Schiffsprotalen kannst du jederzeit zwischen deiner und meiner Gegenwart
+      hin-und-herwechseln. Denke nach. F\xFCr was hat das Universum dich her gebracht?"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Hmm... ich werde dar\xFCber nachdenken... Danke f\xFCr deine Erkl\xE4rungen.\n"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Gerne. Komm jederzeit wieder wenn du Fragen hast.
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  <DialogueOptions>k__BackingField:
+  - optionText: Error Exeption Bla
+    nextDialogueBranch: {fileID: 0}
+  - optionText: Fisch Fisch Fisch
+    nextDialogueBranch: {fileID: 11400000}
+  - optionText: Blubb Blubb Blubb
+    nextDialogueBranch: {fileID: 0}

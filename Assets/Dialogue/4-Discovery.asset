@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
+  m_Name: 4-Discovery
+  m_EditorClassIdentifier: 
+  <DialogueLines>k__BackingField:
+  - Text: "Du musst mir helfen! Dein j\xFCngeres Ich hat mir nicht geglaubt!"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Mein j\xFCngeres Ich\u2026?"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Oh, \xE4hm\u2026  ich habe dich in meiner Gegenwart schonmal getroffen.
+      Leider hattest du kein Interesse an mir. Als Du mich dann hier gefragt hattest,
+      f\xFCr welche Aufgabe ich die Zeitmaschine gefunden habe, dachte ich, damit
+      ich mit deiner Hilfe das Herz deines j\xFCngeren Ichs erobern kann. Ich habe
+      ihr eine \u201CTwilight Amaryllis\u201D gebracht. Aber jetzt will sie einen
+      Beweis, dass ich in der Zukunft war."
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: " So so so\u2026 du hast also mit meinem j\xFCngeren Ich geflirtet\u2026
+      und jetzt willst du meine Hilfe dabei...."
+    Speaker: {fileID: 0}
+    SpecialSprite: {fileID: 0}
+  - Text: "Ja\u2026 also\u2026"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Ha ha. Du brauchst dich nicht sch\xE4men. Ich will dir etwas sagen. ICH
+      selbst war es, die die Zeitmaschine gebaut und in deine Zeit geschickt hat.
+      Ich habe das getan, damit du mich hier besuchen kannst, um dir eine M\xF6glichkeit
+      zu geben, mich kennenzulernen. Denn du musst wissen, dass ich eine sehr misstrauische
+      und besch\xE4ftigte junge Frau war. Bei all der globalen Zerst\xF6rung war
+      in meinem Herz kein Platz f\xFCr Liebe. Ich war selbst beteiligt am Bau der
+      \u201CAetherium\u201D. Doch dann, nachdem alles andere Leben schon lange fort
+      war\u2026 habe ich mich an deine Versuche erinnert, mit mir zu sprechen\u2026
+      oft habe ich gedacht, wenn ich nur zur\xFCck gehen k\xF6nnte! \u2026 und diesmal
+      anders reagieren \u2026 Deswegen bist du hier."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: WAS ??!
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Hier, ich gebe dir mein Armband. Die Frauen in meiner Familie haben es
+      seit Generationen weitergegeben\u2026 Es hat vor mir meiner Schwester geh\xF6rt,
+      die jung gestorben ist. Wenn du meinem j\xFCngeren Ich diese Kette zeigst,
+      wird sie dir glauben. Ich habe nie jemandem davon erz\xE4hlt au\xDFer Dir,
+      jetzt. Es kann keine F\xE4lschung sein."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Ich wei\xDF nicht was ich sagen kann\u2026"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Sag nichts. Ich m\xF6chte dich nur um eins bitten, und zwar alles zu tun
+      um mein j\xFCngeres Ich auf ihrem Weg nicht allein zu lassen. Vielleicht k\xF6nnen
+      wir gemeinsam einen besseren Weg finden."
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  <DialogueOptions>k__BackingField: []

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.Events;
 
 public class DialogueDisplay: MonoBehaviour {
     [Header("References")]
@@ -25,7 +26,13 @@ public class DialogueDisplay: MonoBehaviour {
     [Tooltip("Wird ausgewählt, wenn kein Speaker angegeben wurde")]
     [SerializeField] private Speaker defaultSpeaker;
     [SerializeField] private float optionSpawnTime = 0.25f;
+    [Header("Events")]
+    [SerializeField] private UnityEvent onNextLine;
+    [SerializeField] private UnityEvent onFinishedDialogue;
     public Action OnNextLine;
+    private void OnEnable() {
+        NextLine();
+    }
     private void SetDialogueUI(Dialogue.Line dialogueLine)
     {
         if(dialogueLine == null) 
@@ -33,6 +40,8 @@ public class DialogueDisplay: MonoBehaviour {
             Close();
             return;
         }
+        Debug.Log(dialogueLine.Speaker.Name);
+        Debug.Log(dialogueLine.Text);
         nameLocalized.text = dialogueLine.Speaker.Name;
         dialogueLocalized.TypeMessage(dialogueLine.Text); 
         backgroundImage.color = dialogueLine.Speaker.BackgroundColor;
@@ -65,11 +74,13 @@ public class DialogueDisplay: MonoBehaviour {
         else
         {
             OnNextLine?.Invoke();
+            onNextLine?.Invoke();
             SetDialogueUI(dialogueReader.ReadDialogueLine());
         }
     }
         private void Close()
     {
+        onFinishedDialogue?.Invoke();
         if(!dialogueReader.HasOptions())
         {
             animator.SetTrigger("Close");

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  <DialogueLines>k__BackingField:
+  - Text: Was geht?
+    Speaker: {fileID: 11400000, guid: 7bc73b3e395749d4cbe6f73048de0c99, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Nicht viel... \n\xC4hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh...\nBei
+      dir?"
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  <DialogueOptions>k__BackingField: []

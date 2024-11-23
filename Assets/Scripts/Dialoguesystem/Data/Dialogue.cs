@@ -9,7 +9,7 @@ public class Dialogue : ScriptableObject {
     #region Special Classes
     [Serializable] public class Line 
     {
-        public string Text;
+        [TextArea] public string Text;
         public Speaker Speaker;
         [Tooltip("Wird anstelle der Standard Speakersprite verwendet")]
         public Sprite SpecialSprite;

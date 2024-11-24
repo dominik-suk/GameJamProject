@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Iris old
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Iris
-  <Sprite>k__BackingField: {fileID: 8026062634124125242, guid: e5886236eae2abc45bb661d830885717, type: 3}
+  <Sprite>k__BackingField: {fileID: 3356992250721713416, guid: 06a5d97df75ffd74f893461a51ead365, type: 3}
   <TextColor>k__BackingField: {r: 0.2679245, g: 0.09857596, b: 0.14599358, a: 1}
   <BackgroundColor>k__BackingField: {r: 0.9607843, g: 0.7254902, b: 0.7482393, a: 1}

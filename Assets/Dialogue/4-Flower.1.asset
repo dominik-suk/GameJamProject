@@ -25,8 +25,7 @@ MonoBehaviour:
     Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
     SpecialSprite: {fileID: 0}
   <DialogueOptions>k__BackingField:
-  - optionText: "You really just found these growing somewhere? Oh, I haven\u2019t
-      seen them in ages!"
+  - optionText: "Yes, pure chance! I guess they'll stir up some good memories\u2026"
     nextDialogueBranch: {fileID: 11400000, guid: 3f0dd68dc1569974d9c9126f2cbdf734, type: 2}
   - optionText: Yeah they were quite hidden. Took me a while to find them.
     nextDialogueBranch: {fileID: 11400000, guid: 703360b211e07024db4dc9b3a52a17bf, type: 2}

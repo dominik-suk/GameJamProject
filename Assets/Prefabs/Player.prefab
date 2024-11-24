@@ -160,6 +160,8 @@ GameObject:
   - component: {fileID: 846851000182668309}
   - component: {fileID: 8654211852015250294}
   - component: {fileID: 9186406032580368048}
+  - component: {fileID: 4018192118641944180}
+  - component: {fileID: 2317886258449490887}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -494,3 +496,59 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.4166666, y: 2.6666667}
   m_Direction: 0
+--- !u!114 &4018192118641944180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056431260597457599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95eeaa01f11369439ee883361c4fd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx: {fileID: -2234035642971503120, guid: ff5ea7eeb2b32384b8b3ba7c6e792cc2, type: 2}
+  _walkingSound: {fileID: 8300000, guid: 4b2d9822b3048284e92e20c5b0c028ae, type: 3}
+--- !u!114 &2317886258449490887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056431260597457599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919e40419e6b8104ba11614cb2c9540f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDialogueStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4059044563468999058}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDialogueFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4059044563468999058}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2

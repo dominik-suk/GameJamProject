@@ -2,8 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-
-[CreateAssetMenu(fileName = "PlatformerInputReader", menuName = "PlatformerInputReader", order = 0)]
 public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
 {
     [Header("Events")]

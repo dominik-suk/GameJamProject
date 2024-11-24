@@ -5,6 +5,8 @@ public class CollectItem : MonoBehaviour, IInteractable
 {
     [Header("Settings")]
     [SerializeField] private Item item;
+    [Header("Events")]
+    private UnityEvent itemCollectedEvent;
     // [Header("Events")]
     // [SerializeField] private UnityEvent itemCollectedEvent;
     private void Start() {

@@ -7,11 +7,19 @@ public class DialogueInteraction : MonoBehaviour, IInteractable {
     [SerializeField] private Dialogue dialogue;
     [Header("Events")]
     [SerializeField] private UnityEvent interactEvent;
-    public static Action<Dialogue> OnDialogueInteraction;
+    [SerializeField] private UnityEvent dialogueInteractionEvent;
+    public static Action<Dialogue> dialogueFinishedEvent;
 
     public void Interact()
     {
-        OnDialogueInteraction?.Invoke(dialogue);
+        dialogueFinishedEvent?.Invoke(dialogue);
         interactEvent?.Invoke();
+        DialogueDisplay.OnDialogueFinished += DialogueFinished;
+    }
+
+    private void DialogueFinished()
+    {
+        DialogueDisplay.OnDialogueFinished -= DialogueFinished;
+        dialogueInteractionEvent?.Invoke();
     }
 }

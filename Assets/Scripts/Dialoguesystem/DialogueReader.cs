@@ -9,10 +9,10 @@ public class DialogueReader : MonoBehaviour
     [SerializeField] private UnityEvent NewDialogueSetEvent;
     private int dialogueIndex;
     private void OnEnable() {
-        DialogueInteraction.OnDialogueInteraction += SetDialogue;
+        DialogueInteraction.dialogueFinishedEvent += SetDialogue;
     }
     private void OnDisable() {
-        DialogueInteraction.OnDialogueInteraction -= SetDialogue;
+        DialogueInteraction.dialogueFinishedEvent -= SetDialogue;
     }
     public void SetDialogue(Dialogue dialogue)
     {

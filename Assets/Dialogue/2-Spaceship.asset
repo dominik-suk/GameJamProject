@@ -114,10 +114,4 @@ MonoBehaviour:
   - Text: Gerne. Komm jederzeit wieder wenn du Fragen hast.
     Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
     SpecialSprite: {fileID: 0}
-  <DialogueOptions>k__BackingField:
-  - optionText: Error Exeption Bla
-    nextDialogueBranch: {fileID: 0}
-  - optionText: Fisch Fisch Fisch
-    nextDialogueBranch: {fileID: 11400000}
-  - optionText: Blubb Blubb Blubb
-    nextDialogueBranch: {fileID: 0}
+  <DialogueOptions>k__BackingField: []

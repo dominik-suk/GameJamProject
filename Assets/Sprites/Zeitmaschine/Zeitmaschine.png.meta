@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zeitmaschine_0: 3121201011830456782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

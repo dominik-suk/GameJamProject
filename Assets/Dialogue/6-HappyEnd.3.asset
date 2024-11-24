@@ -43,4 +43,4 @@ MonoBehaviour:
   - optionText: "I didn\u2019t even think of that\u2026"
     nextDialogueBranch: {fileID: 11400000, guid: eed2c7a9ac2be3f46a6dd649e6e573ec, type: 2}
   - optionText: "Well, I guess I just\u2026 like you."
-    nextDialogueBranch: {fileID: 0}
+    nextDialogueBranch: {fileID: 11400000, guid: 9699f094aace31548adadde1f7af5473, type: 2}

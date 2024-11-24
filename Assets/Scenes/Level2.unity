@@ -1574,6 +1574,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5427842483010666827, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: FallingResetHeight
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 8156413589497622449, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
       propertyPath: moveRigidbody
       value: 

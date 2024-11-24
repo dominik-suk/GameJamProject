@@ -18,6 +18,7 @@ public class MoveRigidbody2D : MonoBehaviour {
     private int availableDashes = 1;
     Vector2 desiredDirection;
 
+
     Vector2 DashVelocity;
     public void HandleMovement(Vector2 vector)
     {
@@ -31,6 +32,7 @@ public class MoveRigidbody2D : MonoBehaviour {
             availableDashes++;
         }
     }
+
 
     public void HandleDash()
     {

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rigidbody2DJump : MonoBehaviour {
     [Header("References")]
@@ -16,10 +17,14 @@ public class Rigidbody2DJump : MonoBehaviour {
     int jumpCount = 0;
     public Action OnJump;
 
+    [SerializeField]
+    float FallingResetHeight = -10;
+
 
     Vector2 BounceVelocity;
     float bounceDecreaseFactor;
     private void OnEnable() {
+
         groundedChecker.OnGrounded += ResetJump;
         groundedChecker.OnLeaveGround += StartCoyoteTimer;
     }
@@ -101,5 +106,14 @@ public class Rigidbody2DJump : MonoBehaviour {
         jumpCount++;
         StopAllCoroutines();
         OnJump?.Invoke();
+    }
+
+
+    private void Update()
+    {
+        if (transform.position.y < FallingResetHeight)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

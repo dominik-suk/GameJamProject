@@ -450,6 +450,7 @@ MonoBehaviour:
   - 20
   coyoteTime: 0.1
   inputBuffer: 0.1
+  FallingResetHeight: -20
 --- !u!114 &4010152977322678349
 MonoBehaviour:
   m_ObjectHideFlags: 0

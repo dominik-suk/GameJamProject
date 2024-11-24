@@ -1807,7 +1807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb80d1e9a3fcc6d45887cd0d30ee1dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuSceneName: 
+  firstSceneName: Level1
 --- !u!4 &1728293245
 Transform:
   m_ObjectHideFlags: 0

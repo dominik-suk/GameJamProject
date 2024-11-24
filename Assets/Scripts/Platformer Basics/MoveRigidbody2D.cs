@@ -53,7 +53,7 @@ public class MoveRigidbody2D : MonoBehaviour {
         rb.linearVelocity = newVelocity + DashVelocity;
         DashVelocity = Vector2.Lerp(DashVelocity, Vector2.zero, dashForceDecreaseSpeed);
         animator.SetBool("isWalking", Mathf.Abs(rb.linearVelocity.x) > 0.1f);
-        spriteRenderer.flipX = rb.linearVelocity.x < 0.1f;
+        spriteRenderer.flipX = rb.linearVelocity.x < 0;
         animator.SetBool("isJumping", rb.linearVelocity.y > .1f);
         animator.SetBool("isFalling", rb.linearVelocity.y < -.1f);
     }

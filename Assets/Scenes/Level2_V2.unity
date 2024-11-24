@@ -437,6 +437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZeitMaschine
       objectReference: {fileID: 0}
+    - target: {fileID: 6301041756900097167, guid: 56ffe387d6e85b140ad659483106b507, type: 3}
+      propertyPath: sceneToLoad
+      value: Hub_V3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -591,8 +591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 258, y: -192.86}
-  m_SizeDelta: {x: 341.36, y: 192.86}
+  m_AnchoredPosition: {x: 258, y: -173.575}
+  m_SizeDelta: {x: 341.36, y: 154.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2330725138790897959
 CanvasRenderer:
@@ -622,8 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Move: \t\tA/D\nJump:\t\t\tSpace/W\nInteract: \t\tE\nSwitch Item: \tQ\nUse
-    Item:\t\tF"
+  m_text: "Move: \t\tA/D\nJump:\t\t\tSpace/W\nDash:\t\t\tShift\nInteract: \t\tE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a2c70534c6444940b0de62821f085b4, type: 2}
   m_sharedMaterial: {fileID: 8930660222657016952, guid: 6a2c70534c6444940b0de62821f085b4, type: 2}
@@ -750,7 +749,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 516, y: 339.28998}
+  m_SizeDelta: {x: 516, y: 300.71997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6626246818246400202
 CanvasRenderer:
@@ -1317,7 +1316,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 964948360403884275}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5962306349914960727}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: OpenMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2861571345552075903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2282,7 +2293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03a3208ac3c0f7408e9200219de40a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuSceneName: Main Menu
+  mainMenuSceneName: MainMenu
   controlsPanel: {fileID: 2855933808053937534}
 --- !u!114 &8412488286406871239
 MonoBehaviour:

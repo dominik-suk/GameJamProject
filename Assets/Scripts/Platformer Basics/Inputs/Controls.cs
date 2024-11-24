@@ -62,6 +62,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""daff3a1c-e18d-4ab7-90bc-1b8e79057b1e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -207,6 +216,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7d0e05ae-71e8-4022-bb60-34a3da8c0838"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -290,6 +310,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Platformer_Move = m_Platformer.FindAction("Move", throwIfNotFound: true);
         m_Platformer_Interact = m_Platformer.FindAction("Interact", throwIfNotFound: true);
         m_Platformer_Dash = m_Platformer.FindAction("Dash", throwIfNotFound: true);
+        m_Platformer_Pause = m_Platformer.FindAction("Pause", throwIfNotFound: true);
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_ChangeItem = m_Inventory.FindAction("ChangeItem", throwIfNotFound: true);
@@ -365,6 +386,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Platformer_Move;
     private readonly InputAction m_Platformer_Interact;
     private readonly InputAction m_Platformer_Dash;
+    private readonly InputAction m_Platformer_Pause;
     public struct PlatformerActions
     {
         private @Controls m_Wrapper;
@@ -373,6 +395,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Platformer_Move;
         public InputAction @Interact => m_Wrapper.m_Platformer_Interact;
         public InputAction @Dash => m_Wrapper.m_Platformer_Dash;
+        public InputAction @Pause => m_Wrapper.m_Platformer_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Platformer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -394,6 +417,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlatformerActions instance)
@@ -410,6 +436,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlatformerActions instance)
@@ -505,6 +534,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {

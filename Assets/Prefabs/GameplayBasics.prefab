@@ -610,6 +610,38 @@ PrefabInstance:
       propertyPath: onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 557755004948982574}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059044563468999058, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
+      propertyPath: PauseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9045152985056258616, guid: e27a3a656459fba459645ea5bfd00ec7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -805,6 +837,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68bd56cb1d2cf245b5a3021dd0e8ad5, type: 3}
+--- !u!1 &557755004948982574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7532736525814007136, guid: d68bd56cb1d2cf245b5a3021dd0e8ad5, type: 3}
+  m_PrefabInstance: {fileID: 8013078896153931342}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3644851558999950603 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6746728570142829381, guid: d68bd56cb1d2cf245b5a3021dd0e8ad5, type: 3}

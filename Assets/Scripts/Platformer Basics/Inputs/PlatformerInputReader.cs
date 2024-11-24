@@ -11,6 +11,7 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
     [SerializeField] private UnityEvent DashEvent;
     [SerializeField] private UnityEvent InteractEvent;
     [SerializeField] private UnityEvent SwitchLayerEvent;
+    [SerializeField] private UnityEvent PauseEvent;
     private Controls controls;
     private void OnEnable() {
         controls = new Controls();
@@ -59,6 +60,14 @@ public class PlatformerInputReader : MonoBehaviour, Controls.IPlatformerActions
     public void OnSwitchLayer(InputAction.CallbackContext context)
     {
         SwitchLayerEvent?.Invoke();
+    }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+       if(context.started)
+       {
+           PauseEvent?.Invoke();
+       }
     }
 }
 

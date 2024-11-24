@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 64.215, y: -24.86}
-  m_SizeDelta: {x: 78.43, y: 0}
+  m_AnchoredPosition: {x: 228.475, y: -24.86}
+  m_SizeDelta: {x: 406.95, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2709149122065506407
 CanvasRenderer:
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
+  m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!1 &1277380634285678036
 GameObject:
@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 6844907170747439306}
   - component: {fileID: 8255274522830140023}
   - component: {fileID: 117820328455261937}
+  - component: {fileID: 1338518498260390886}
   m_Layer: 5
   m_Name: DialogueOption
   m_TagString: Untagged
@@ -192,7 +193,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 435.83337, y: -163.215}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 456.95, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6561338584603216165
 CanvasRenderer:
@@ -249,11 +250,11 @@ MonoBehaviour:
     m_Right: 25
     m_Top: 12
     m_Bottom: 12
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -270,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
+  m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!114 &6844907170747439306
 MonoBehaviour:
@@ -365,3 +366,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1338518498260390886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277380634285678036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 200
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1

@@ -48,4 +48,4 @@ MonoBehaviour:
   ambience: {fileID: 1889539850162116987, guid: ff5ea7eeb2b32384b8b3ba7c6e792cc2, type: 2}
   backgroundMusic: {fileID: 0}
   ambienceMusic: {fileID: 0}
-  dialogueMusic: {fileID: 0}
+  dialogueMusic: {fileID: 8300000, guid: 0476235cba7f3d54bacf586bb52e8901, type: 3}

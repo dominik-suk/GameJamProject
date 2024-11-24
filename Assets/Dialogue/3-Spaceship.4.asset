@@ -19,13 +19,13 @@ MonoBehaviour:
     SpecialSprite: {fileID: 0}
   - Text: "Well then! Welcome to the \"Aetherium\"! It\u2019s a pleasure to have
       you here. My name is Iris."
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: Nice to meet you, Iris!
     Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: If you need any guidance around this place, feel free to ask me.
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: Okay, thank you!
     Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
@@ -36,7 +36,7 @@ MonoBehaviour:
     SpecialSprite: {fileID: 0}
   - Text: "Oh, perhaps you could help me water my flowers! I\u2019ve got quite a
       lot and it does take a toll on me."
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: (This is actually perfect, maybe I can find out which flower she likes
       so I can impress her!)
@@ -47,16 +47,16 @@ MonoBehaviour:
     SpecialSprite: {fileID: 0}
   - Text: I love all of my flowers equally, but if I had to choose, it would be the
       Twilight Amaryllis.
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: "When I was a child and flowers were still able to bloom freely we had
       loads of them in our garden. But nowadays they\u2019ve become sort of a rarity\u2026"
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: I remember my husband getting them for me when we started seeing each other.
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: Alright! I'll get straight to watering then!
-    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
     SpecialSprite: {fileID: 0}
   <DialogueOptions>k__BackingField: []

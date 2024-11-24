@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 97e3a218d782a564bb3745318ae1bfda
+guid: b9eec5d89c7a5ae48a71348f74998f83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6505081703546308038
-    second: Run_1_0
+      213: 3121201011830456782
+    second: Zeitmaschine_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run_1_0
+      name: Zeitmaschine_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 32
+        width: 78
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3aba31f7ae49b5a0800000000000000
-      internalID: -6505081703546308038
+      spriteID: ec18ebe88cbb05b20800000000000000
+      internalID: 3121201011830456782
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Run_1_0: -6505081703546308038
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

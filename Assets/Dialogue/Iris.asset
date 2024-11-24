@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Iris
   <Sprite>k__BackingField: {fileID: 0}
-  <TextColor>k__BackingField: {r: 0.082102165, g: 0.111147165, b: 0.4245283, a: 1}
-  <BackgroundColor>k__BackingField: {r: 0.6994037, g: 0.8773585, b: 0.84176755, a: 1}
+  <TextColor>k__BackingField: {r: 0.2679245, g: 0.09857596, b: 0.14599358, a: 1}
+  <BackgroundColor>k__BackingField: {r: 0.9607843, g: 0.7254902, b: 0.7482393, a: 1}

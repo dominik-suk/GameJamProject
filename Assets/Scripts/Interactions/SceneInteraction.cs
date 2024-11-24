@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 public class SceneLoadInteraction : MonoBehaviour, IInteractable
 {
     [Header("Serttings")]
-    [SerializeField] private GameObject sceneToLoad;
+    [SerializeField] private string sceneToLoad;
     public void Interact()
     {
-        SceneManager.LoadScene(sceneToLoad.name);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

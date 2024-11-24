@@ -116,59 +116,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tilemap_Erde_V2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 16
-        height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b430dbf74e4fb28f0800000000000000
-      internalID: -564088066072050869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilemap_Erde_V2_1
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 96
-        width: 16
-        height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07515ad80ea250500800000000000000
-      internalID: 361742489010640240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Tilemap_Erde_V2_2
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,12 +141,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +163,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_4
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,12 +185,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -251,12 +207,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_6
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,12 +229,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_7
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,12 +251,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_8
       rect:
         serializedVersion: 2
-        x: 112
+        x: 128
         y: 128
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -317,12 +273,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 0
+        y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -339,12 +295,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -361,12 +317,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_11
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -383,12 +339,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_12
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -405,12 +361,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_13
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -427,12 +383,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_14
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,12 +405,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_15
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -471,12 +427,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_16
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 112
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -493,12 +449,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_17
       rect:
         serializedVersion: 2
-        x: 112
-        y: 112
+        x: 0
+        y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -515,12 +471,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_18
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -537,12 +493,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_19
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -559,12 +515,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_20
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -581,12 +537,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_21
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -603,12 +559,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -625,12 +581,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_23
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -647,12 +603,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_24
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -669,12 +625,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_25
       rect:
         serializedVersion: 2
-        x: 112
+        x: 128
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -691,12 +647,12 @@ TextureImporter:
       name: Tilemap_Erde_V2_26
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 96
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -717,8 +673,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -739,8 +695,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -761,8 +717,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -783,8 +739,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -805,8 +761,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,8 +783,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -849,8 +805,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -871,8 +827,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -893,8 +849,8 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -915,8 +871,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -937,8 +893,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -959,8 +915,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -981,8 +937,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1003,8 +959,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1025,8 +981,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1047,8 +1003,8 @@ TextureImporter:
         y: 64
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1069,8 +1025,8 @@ TextureImporter:
         y: 48
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1091,8 +1047,8 @@ TextureImporter:
         y: 48
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1113,8 +1069,8 @@ TextureImporter:
         y: 48
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1135,8 +1091,8 @@ TextureImporter:
         y: 48
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1157,8 +1113,8 @@ TextureImporter:
         y: 48
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1179,8 +1135,8 @@ TextureImporter:
         y: 32
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1201,8 +1157,8 @@ TextureImporter:
         y: 32
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1223,8 +1179,8 @@ TextureImporter:
         y: 16
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1245,8 +1201,8 @@ TextureImporter:
         y: 16
         width: 16
         height: 16
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1255,6 +1211,50 @@ TextureImporter:
       bones: []
       spriteID: 35ca63bcdb9f09f638a07826a6c3c74c
       internalID: 270004199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Erde_V2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c8fcd0af1e25c4991aac18eff329bf
+      internalID: 1918216178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_Erde_V2_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f461725f966854241b17a31910ac2b7f
+      internalID: -1015855178
       vertices: []
       indices: 
       edges: []
@@ -1273,6 +1273,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Tilemap_Erde_V2_0: 1918216178
+      Tilemap_Erde_V2_1: -1015855178
       Tilemap_Erde_V2_10: 365004413
       Tilemap_Erde_V2_11: -847722739
       Tilemap_Erde_V2_12: -1329870248

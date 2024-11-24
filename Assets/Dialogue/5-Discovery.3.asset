@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
+  m_Name: 5-Discovery.3
+  m_EditorClassIdentifier: 
+  <DialogueLines>k__BackingField:
+  - Text: "I\u2019ve already experienced all that after all. I remember you approaching
+      me and bringing me those flowers. And I didn\u2019t believe you when you told
+      me the truth."
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: You didn't think it was a coincidence, you stumbled upon that time machine?
+      I sent it there so you would find it and come here to get the information from
+      me.
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "\u201CI should have told you right away, I'm sorry."
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Take this bracelet. It\u2019s an heirloom that was handed down to me on
+      my 18th birthday. Give it to me in your time as proof, my younger self will
+      believe you."
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Thank you so much!
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: Good luck!
+    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
+    SpecialSprite: {fileID: 0}
+  <DialogueOptions>k__BackingField: []

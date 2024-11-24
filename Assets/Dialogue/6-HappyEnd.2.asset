@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
-  m_Name: 3-Spaceship.2
+  m_Name: 6-HappyEnd.2
   m_EditorClassIdentifier: 
   <DialogueLines>k__BackingField:
-  - Text: Are you sure?
-    Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
+  - Text: "If you don\u2019t wanna give it to me then stay away from me, you creep!"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
     SpecialSprite: {fileID: 0}
   <DialogueOptions>k__BackingField:
-  - optionText: Yes
-    nextDialogueBranch: {fileID: 11400000, guid: fa1f63d0e5b916a46b1609a9a00cece9, type: 2}
-  - optionText: There's a misunderstanding...
+  - optionText: I still don't wanna give it to you!
     nextDialogueBranch: {fileID: 11400000}
+  - optionText: "Okay okay, I\u2019ll show you! I\u2019m sorry."
+    nextDialogueBranch: {fileID: 11400000, guid: 5a9613ca465cd3540afbf863106b95e6, type: 2}

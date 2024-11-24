@@ -16,7 +16,7 @@ MonoBehaviour:
   - Text: Oh. Who are you?
     Speaker: {fileID: 11400000, guid: 094c10a7aabfd324eab564e2e86da770, type: 2}
     SpecialSprite: {fileID: 0}
-  - Text: (She looks a grear deal like that girl I just met. Is that her?)
+  - Text: (She looks a great deal like that girl I just met. Is that her?)
     Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
     SpecialSprite: {fileID: 0}
   - Text: "Are you my new Caregiver? My last one mentioned they had to quit and I\u2019d

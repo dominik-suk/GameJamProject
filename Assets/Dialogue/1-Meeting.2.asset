@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
-  m_Name: 5-HappyEnd
+  m_Name: 1-Meeting.2
   m_EditorClassIdentifier: 
-  <DialogueLines>k__BackingField: []
+  <DialogueLines>k__BackingField:
+  - Text: ...
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
   <DialogueOptions>k__BackingField: []

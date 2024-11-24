@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd030efe410b2364f8313a030a2f749e, type: 3}
+  m_Name: 4-Flower.2
+  m_EditorClassIdentifier: 
+  <DialogueLines>k__BackingField:
+  - Text: "Oh, well\u2026 thank you. I used to have them at every corner of my house
+      back in the day. How did you know?"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "Oh, I just\u2026 guessed. They really are beautiful."
+    Speaker: {fileID: 11400000, guid: 78aec5e44e3eab248913f9d6aec8317a, type: 2}
+    SpecialSprite: {fileID: 0}
+  - Text: "But you said, they would bring back \u2018good\u2019 memories. So specific\u2026
+      You haven\u2019t been snooping around here, have you?"
+    Speaker: {fileID: 11400000, guid: fb2010045aa1ff4a7a096c2f2f01645f, type: 2}
+    SpecialSprite: {fileID: 0}
+  <DialogueOptions>k__BackingField:
+  - optionText: "I want to be honest with you\u2026"
+    nextDialogueBranch: {fileID: 11400000, guid: f114fcc54fcfb8c4b92835fae79b761c, type: 2}
+  - optionText: "It\u2019s a crazy story\u2026"
+    nextDialogueBranch: {fileID: 11400000, guid: f114fcc54fcfb8c4b92835fae79b761c, type: 2}

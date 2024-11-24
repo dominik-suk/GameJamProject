@@ -11,6 +11,9 @@ public class MoveRigidbody2D : MonoBehaviour {
     [SerializeField] bool horizontalMovement = false;
     [SerializeField] float speedUpTime;
     [SerializeField] float moveSpeed = 10;
+    [Header("Animation Settings")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     [Header("Dash Settings")]
     [SerializeField] float dashForce = 20.0f;
     [SerializeField, Range(0.0f,1.0f)] float dashForceDecreaseSpeed = 0.5f;
@@ -42,8 +45,6 @@ public class MoveRigidbody2D : MonoBehaviour {
             DashVelocity.x = desiredDirection.normalized.x * dashForce;
         }
     }
-
-
     private void Update() {
         Vector2 newVelocity = Vector2.MoveTowards(rb.linearVelocity,desiredDirection*moveSpeed, moveSpeed/speedUpTime * Time.deltaTime);
         if(!horizontalMovement)
@@ -52,6 +53,10 @@ public class MoveRigidbody2D : MonoBehaviour {
         }
         rb.linearVelocity = newVelocity + DashVelocity;
         DashVelocity = Vector2.Lerp(DashVelocity, Vector2.zero, dashForceDecreaseSpeed);
+        animator.SetBool("isWalking", Mathf.Abs(rb.linearVelocity.x) > 0.1f);
+        spriteRenderer.flipX = rb.linearVelocity.x < 0;
+        animator.SetBool("isJumping", rb.linearVelocity.y > .1f);
+        animator.SetBool("isFalling", rb.linearVelocity.y < -.1f);
     }
 
 }

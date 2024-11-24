@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: You
   m_EditorClassIdentifier: 
   <Name>k__BackingField: (You)
-  <Sprite>k__BackingField: {fileID: 0}
+  <Sprite>k__BackingField: {fileID: 5126995304410640774, guid: 0aeedcb2f66544544852b792d5207a83, type: 3}
   <TextColor>k__BackingField: {r: 0.17369168, g: 0.3207547, b: 0.15190457, a: 1}
   <BackgroundColor>k__BackingField: {r: 0.9547169, g: 0.8065557, b: 0.531399, a: 1}

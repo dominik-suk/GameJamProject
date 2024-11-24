@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
 public class MoveRigidbody2D : MonoBehaviour {
@@ -11,6 +9,7 @@ public class MoveRigidbody2D : MonoBehaviour {
     [SerializeField] bool horizontalMovement = false;
     [SerializeField] float speedUpTime;
     [SerializeField] float moveSpeed = 10;
+    
     [Header("Animation Settings")]
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
